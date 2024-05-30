@@ -6,26 +6,22 @@ html,
 body {
     overflow-x: hidden;
     font-family: 'Archivo Black';
-    
 }
+
 @keyframes customBounce {
     30% {
         transform: scale(1.2);
     }
-
     40%,
     60% {
         transform: rotate(-20deg) scale(1.2);
     }
-
     50% {
         transform: rotate(20deg) scale(1.2);
     }
-
     70% {
         transform: rotate(0deg) scale(1.2);
     }
-
     100% {
         transform: scale(1);
     }
@@ -34,6 +30,26 @@ body {
 .about-logos {
     animation: customBounce 1.5s infinite;
 }
+
 .w-full button:hover .svgg path {
     fill: black;
+}
+
+.presale-announcement {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    max-width: 600px;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+.presale-announcement a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.presale-announcement a:hover {
+    text-decoration: underline;
 }
